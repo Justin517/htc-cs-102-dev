@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:MovieList"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <StackPanel  Height="301" Margin="10,10,10,10" Orientation="Vertical">
         
-    </Grid>
+        <TextBlock>Title</TextBlock>
+        <TextBox Name="titleInput" Margin="0, 0, 0, 15"></TextBox>
+        <TextBlock>Release Year</TextBlock>
+        <TextBox Name="releaseYearInput" Margin="0, 0, 0, 15" ></TextBox>
+        <TextBlock>Director</TextBlock>
+        <TextBox Name="directorInput" Margin="0, 0, 0, 15"></TextBox>
+        <TextBlock>Length</TextBlock>
+        <TextBox Name="lengthInput" Margin="0, 0, 0, 15"></TextBox>
+        <TextBlock>Genre</TextBlock>
+        <TextBox Name="genreInput" Margin="0, 0, 0, 15"></TextBox>
+        <Button Margin="0, 0, 0, 10" HorizontalAlignment="Center" Click="AddButton_Click">Add Movie</Button>
+        <Button HorizontalAlignment="Center" Click="ShowButton_Click">Show All Movies</Button>
+      
+    </StackPanel>
+
 </Window>
