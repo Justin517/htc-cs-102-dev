@@ -7,21 +7,21 @@ using System.Windows;
 
 namespace InheritanceIntro
 {
-    public class Dog :  Animal
+    public class Lion : Animal
     {
-        
-        public void Bark()
-        {
-            MessageBox.Show("Bark");
-        }
+        public bool Mane;
 
-        public Dog() { }
+        public Lion () { }
 
-        public Dog(string breed, int height, string name)
+        public Lion(int height, string name, bool mane)
         {
-            this.Breed = breed;
             this.Height = height;
             this.Name = name;
+            this.Mane = mane;
+        }
+        public void Roar()
+        {
+            MessageBox.Show("ROAR");
         }
     }
 }
