@@ -23,6 +23,12 @@ namespace PolymorphismIntro
             this.Breed = breed;
             this.Height = height;
             this.Name = name;
+
+        }
+
+        public override void Speak()
+        {
+            MessageBox.Show("Bark");
         }
     }
 }
